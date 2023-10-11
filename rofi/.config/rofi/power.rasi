@@ -1,0 +1,14 @@
+window {
+  width: 13.5%;
+  location: north east;
+  y-offset: 45px;
+  x-offset: -5px;
+}
+
+inputbar {
+  children: [entry];
+}
+
+listview {
+	lines: 3;
+}

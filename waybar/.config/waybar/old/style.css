@@ -1,0 +1,151 @@
+/* define colors */
+@define-color base-transparent rgba(30, 30, 46, 0.2);
+@define-color base   #1e1e2e;
+@define-color mantle #181825;
+@define-color crust  #11111b;
+
+@define-color text     #cdd6f4;
+@define-color subtext0 #a6adc8;
+@define-color subtext1 #bac2de;
+
+@define-color surface0 #313244;
+@define-color surface1 #45475a;
+@define-color surface2 #585b70;
+
+@define-color overlay0 #6c7086;
+@define-color overlay1 #7f849c;
+@define-color overlay2 #9399b2;
+
+@define-color blue      #89b4fa;
+@define-color lavender  #b4befe;
+@define-color sapphire  #74c7ec;
+@define-color sky       #89dceb;
+@define-color teal      #94e2d5;
+@define-color green     #a6e3a1;
+@define-color yellow    #f9e2af;
+@define-color peach     #fab387;
+@define-color maroon    #eba0ac;
+@define-color red       #f38ba8;
+@define-color mauve     #cba6f7;
+@define-color pink      #f5c2e7;
+@define-color flamingo  #f2cdcd;
+@define-color rosewater #f5e0dc;
+
+
+* {
+    font-family: JetBrainsMono Nerd Font;
+}
+
+#clock,
+#battery,
+#cpu,
+#backlight,
+#pulseaudio,
+#tray,
+#language,
+#workspaces,
+#network,
+
+
+#battery {
+    border-radius: 10px 0 0 10px;
+    border-right: 0;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+#backlight,
+
+#custom-sep {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#network {
+    margin-right: 12px;
+    padding-right: 10px;
+    border-radius: 0 10px 10px 0;
+    border-left: 0;
+    color: @rosewater;
+}
+
+window#waybar {
+    background-color: @base-transparent;
+}
+
+#workspaces {
+    padding-right: 2px;
+}
+
+#workspaces button {
+    border: 0;
+    color: @mauve;
+    font-weight: bolder;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.active{
+    color: @blue;
+}
+
+#workspaces button:hover {
+    box-shadow: #161320 0 0 0 0px;
+    background: #101317;
+    text-shadow: #e2e0ec 0 0 0px;
+}
+
+#clock label{
+    color: @peach;
+    font-weight:  bolder;
+    font-size: 14px;
+}
+
+#clock {
+    color: @peach;
+    font-weight:  bolder;
+    margin-left: 12px;
+    font-size: 15px;
+    padding-top: 3px;
+    padding-right: 21px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+
+#battery.charging {
+    color: #ECE0A8;
+}
+
+#battery {
+    color: @sapphire;
+    font-weight: bolder;
+}
+
+#battery.warning:not(.charging) {
+    color: #dccb7f;
+}
+
+#battery.critical:not(.charging) {
+    color: #c04668;
+}
+
+#backlight {
+    color: #A8E5E6;
+}
+
+#pulseaudio {
+    color: @lavender;
+    font-weight: bolder;
+}
+
+#pulseaudio.muted {
+    color: #E97193;
+}
+
+#tray {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 25px;
+}

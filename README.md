@@ -1,4 +1,4 @@
-# Dotfiles Hyprland Rice
+
 My first Wayland Rice, using Hyprland.
 
 ## Packages
@@ -14,7 +14,7 @@ My first Wayland Rice, using Hyprland.
 |rofi-lbonn-wayland-git |App launcher                                 |
 
 ## TODO
-[x] create list of needed packages
-[ ] create deploy script
-[ ] make screenshots
-[ ] cleanup scripts
+-[x] create list of needed packages
+-[ ] create deploy script
+-[ ] make screenshots
+-[ ] cleanup scripts

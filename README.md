@@ -1,7 +1,6 @@
 # Dotfiles Hyprland Rice
 My first Wayland Rice, using Hyprland.
 
-
 ## Packages
 |Package                |Function                                     |
 |-----------------------|---------------------------------------------|    
@@ -13,3 +12,9 @@ My first Wayland Rice, using Hyprland.
 |dunst                  |Notification                                 | 
 |alacritty              |Terminal Emulator                            |
 |rofi-lbonn-wayland-git |App launcher                                 |
+
+## TODO
+[x] create list of needed packages
+[ ] create deploy script
+[ ] make screenshots
+[ ] cleanup scripts

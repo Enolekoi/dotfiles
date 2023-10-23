@@ -3,6 +3,7 @@ My first Wayland Rice, using Hyprland.
 
 
 ## Packages
+|-----------------------|-----------------------------------------------|    
 |Hyprland               |(Window Manager)                               |    
 |Hyprpaper              |(Wallpaper)                                    |
 |Waybar-hyprland-git    |(Bar, with support for Hyprland Workspaces)    |

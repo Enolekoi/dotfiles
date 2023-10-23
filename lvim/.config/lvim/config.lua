@@ -17,3 +17,6 @@ lvim.transparent_window = true
 lvim.plugins = {
   { "catppuccin/nvim"},
 }
+
+lvim.keys.normal_mode["K"] = ":BufferLineCycleNext<CR>"
+lvim.keys.normal_mode["H"] = ":BufferLineCyclePrev<CR>"

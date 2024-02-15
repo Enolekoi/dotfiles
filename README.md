@@ -1,6 +1,9 @@
 # Hyprland Dotfiles
 My first Wayland Rice, using Hyprland.
 
+## Installation
+Install all dependencies and clone the repo and create symlinks using gnu stow
+
 ## Packages
 |Package                |Function                                     |
 |-----------------------|---------------------------------------------|
@@ -14,17 +17,12 @@ My first Wayland Rice, using Hyprland.
 |rofi-lbonn-wayland-git |App launcher                                 |
 
 ## TODO
-- [x] create list of needed packages
+- [ ] create list of needed packages
 - [ ] create deploy script
-- [x] cleanup alacritty
+- [ ] update README.md
 - [ ] cleanup dunst
-- [x] cleanup hyprland
-- [ ] cleanup lvim
 - [ ] cleanup rofi
 - [x] cleanup scripts [further cleanup needed]
-- [ ] cleanup swayidle
 - [ ] cleanup swaylock
-- [x] cleanup wallpaper
 - [ ] add wallpaper sources
 - [ ] cleanup waybar
-- [ ] cleanup zsh

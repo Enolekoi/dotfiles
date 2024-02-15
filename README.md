@@ -23,6 +23,5 @@ Install all dependencies and clone the repo and create symlinks using gnu stow
 - [ ] cleanup dunst
 - [ ] cleanup rofi
 - [x] cleanup scripts [further cleanup needed]
-- [ ] cleanup swaylock
 - [ ] add wallpaper sources
 - [ ] cleanup waybar

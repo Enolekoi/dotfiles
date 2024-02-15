@@ -13,6 +13,7 @@ export GOPATH=$HOME/.local/share/go
 export PATH=$HOME/.fnm:$PATH
 export PATH="$PATH:./node_modules/.bin"
 export CPATH=$CPATH:/usr/include/opencv4 # Add OPENCV to Path
+export ImagingData=$HOME/Bilder/Bildverarbeitung # Add OPENCV to Path
 export JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab
 # eval "$(fnm env)"
 # eval "$(zoxide init zsh)"

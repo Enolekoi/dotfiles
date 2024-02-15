@@ -34,3 +34,10 @@ alias archlinux-fix-keys="doas pacman-key --init && doas pacman-key --populate a
 
 # alias vim='nvim'
 alias vim='lvim'
+
+# make background of asciiquarium transparent
+alias asciiquarium="asciiquarium -t"
+
+# alias for fast navigation
+alias conf="cd ~/.config"
+alias haw="cd ~/Dokumente/Hochschule/Master/2_Semester"

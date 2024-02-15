@@ -1,0 +1,5 @@
+#!/bin/bash
+
+grim $HOME/Bilder/Screenshots/$(date +'%s_screenshot.png')
+
+mpv $HOME/.local/share/hypr/sounds/camera-shutter.ogg

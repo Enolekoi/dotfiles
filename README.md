@@ -24,4 +24,3 @@ Install all dependencies and clone the repo and create symlinks using gnu stow
 - [ ] cleanup rofi
 - [x] cleanup scripts [further cleanup needed]
 - [ ] add wallpaper sources
-- [ ] cleanup waybar

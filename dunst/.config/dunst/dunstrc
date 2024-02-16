@@ -287,22 +287,22 @@
     per_monitor_dpi = false
 
 [global]
-frame_color = "#89B4FA"
+frame_color = "#F9E2AF"
 separator_color= frame
 
 [urgency_low]
 background = "#1E1E2E"
-foreground = "#CDD6F4"
+foreground = "#F9E2AF"
 timeout = 10
 
 [urgency_normal]
 background = "#1E1E2E"
-foreground = "#CDD6F4"
+foreground = "#F9E2AF"
 timeout = 10
 
 [urgency_critical]
 background = "#1E1E2E"
-foreground = "#CDD6F4"
+foreground = "#F9E2AF"
 frame_color = "#FAB387"
 timeout = 0
 

@@ -12,10 +12,23 @@ vim.opt.wrap = true                   -- wrap lines
 
 -- Lvim specific settings
 lvim.transparent_window = true
-
 -- User Plugins
 lvim.plugins = {
   { "catppuccin/nvim"},
+  { "norcalli/nvim-colorizer.lua"},
+  { "HiPhish/rainbow-delimiters.nvim"},
+}
+require'colorizer'.setup()
+require('nvim-treesitter.configs').setup {
+  rainbow = {
+    enable = true,
+    -- list of languages you want to disable the plugin for
+    disable = {},
+    -- Which query to use for finding delimiters
+    query = 'rainbow-parens',
+    -- Highlight the entire buffer all at once
+    strategy = require('ts-rainbow').strategy.global,
+  }
 }
 
 lvim.keys.normal_mode["K"] = ":BufferLineCycleNext<CR>"

@@ -18,7 +18,6 @@ lvim.plugins = {
   { "norcalli/nvim-colorizer.lua"},
   { "HiPhish/rainbow-delimiters.nvim"},
 }
-require'colorizer'.setup()
 require('nvim-treesitter.configs').setup {
   rainbow = {
     enable = true,

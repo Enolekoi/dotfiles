@@ -3,20 +3,37 @@
 
 # Arbitrary but unique message tag
 msgTag="myvolume"
+# get value for volume in-/decrease
+vol=$(cut -c 2- <<< "$@")
+# get sign or muted status
+sign=$(cut -c 1 <<< "$@")
 
-# Change the volume using alsa(might differ if you use pulseaudio)
-amixer -D pulse -c 0 set Master "$@" > /dev/null
-# wpctl set-volume @DEFAULT_AUDIO_SINK@ "$@" > /dev/null
-# Query amixer for the current volume and whether or not the speaker is muted
-volume="$(amixer -D pulse -c 0 get Master | tail -1 | awk '{print $4}' | sed 's/[^0-9]*//g')"
-mute="$(amixer -D pulse -c 0 get Master | tail -1 | awk '{print $6}' | sed 's/[^a-z]*//g')"
-if [[ $volume == 0 || "$mute" == "off" ]]; then
+# check if sign is -
+if [ "$sign" == "-" ]; then
+  #unmute and decrease volume by $vol
+  pamixer -u > /dev/null
+  pamixer -d "$vol" > /dev/null
+# check if sign is +
+elif [ "$sign" == "+" ]; then
+  #unmute and increase volume by $vol
+  pamixer -u > /dev/null
+  pamixer -i "$vol" > /dev/null
+# check if sign is m -> indicates muted
+elif [ "$sign" == "m" ]; then
+  pamixer -m
+fi
+
+# get current volume or "muted" string
+volume="$(pamixer --get-volume-human)"
+
+# check if volume is muted
+if [ "$volume" == "muted" ]; then
     # Show the sound muted notification
     dunstify -a "changeVolume" -u low -i audio-volume-muted -h string:x-dunst-stack-tag:$msgTag "Volume muted" 
 else
     # Show the volume notification
     dunstify -a "changeVolume" -u low -i audio-volume-high -h string:x-dunst-stack-tag:$msgTag \
-    -h int:value:"$volume" "Volume: ${volume}%"
+    -h int:value:"$volume" "Volume: ${volume}"
 fi
 
 # Play the volume changed sound

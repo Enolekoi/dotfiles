@@ -1,0 +1,9 @@
+[pyprland]
+plugins = [
+  "scratchpads",
+]
+
+[scratchpads.term]
+animation = "fromTop"
+command ="alacritty --class alacritty-dropdown"
+size="75% 60%"

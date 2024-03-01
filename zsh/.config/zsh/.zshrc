@@ -44,7 +44,11 @@ zsh_add_file "zsh-prompt"
 # Plugins
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
+zsh_add_plugin "MichaelAquilina/zsh-auto-notify"
 # zsh_add_completion "esc/conda-zsh-completion" false # example for adding completions
+#
+# Set notification threshold to 20 seconds
+export AUTO_NOTIFY_THRESHOLD=20
 
 # Key-bindings
 bindkey -s '^o' 'ranger^M'

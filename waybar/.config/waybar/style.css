@@ -60,7 +60,7 @@ window#waybar {
   margin: 5px 0px 5px 0px;
 }
 
-#workspaces button.persistent {
+#workspaces button.empty {
   color: #a6adc8;
 }
 

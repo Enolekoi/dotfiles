@@ -5,5 +5,19 @@ plugins = [
 
 [scratchpads.term]
 animation = "fromTop"
+lazy = false
 command ="alacritty --class alacritty-dropdown"
 size="75% 60%"
+
+[scratchpads.btop]
+animation = "fromBottom"
+lazy = true
+command ="alacritty --class alacritty-dropdown -e btop"
+size="85% 80%"
+
+[scratchpads.bluetooth]
+animation = "fromRight"
+lazy = true
+command ="blueman-manager"
+class ="blueman-manager"
+size="40% 85%"

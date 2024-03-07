@@ -120,7 +120,7 @@
   },
   "custom/pacman-update": {
     "format": "  {} ",
-    "interval": 90,
+    "interval": 10800,
     "exec": "checkupdates | wc -l",
     "signal": 8
   },

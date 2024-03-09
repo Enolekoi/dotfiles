@@ -8,8 +8,11 @@ export XDG_SESSION_DESKTOP=Hyprland
 
 export _JAVA_AWT_WM_NONREPARENTING=1
 export XCURSOR_SIZE=24
-
-export GTK_THEME=Catppuccin-Mocha-Standard-Yellow-Dark
 export GDK_BACKEND=wayland
 
+# Theming
+export GTK_THEME=Catppuccin-Mocha-Standard-Yellow-Dark
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+
+# launch hyprland
 exec Hyprland

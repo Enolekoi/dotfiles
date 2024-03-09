@@ -1,0 +1,15 @@
+#!/bin/sh
+cd ~
+
+# Setting Enviroment Variables
+export XDG_CURRENT_DESKTOP=Hyprland
+export XDG_SESSION_TYPE=wayland
+export XDG_SESSION_DESKTOP=Hyprland
+
+export _JAVA_AWT_WM_NONREPARENTING=1
+export XCURSOR_SIZE=24
+
+export GTK_THEME=Catppuccin-Mocha-Standard-Yellow-Dark
+export GDK_BACKEND=wayland
+
+exec Hyprland

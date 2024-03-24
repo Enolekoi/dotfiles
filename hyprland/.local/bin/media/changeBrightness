@@ -5,13 +5,11 @@
 msgTag="mybrightness"
 
 # Change the brightness using 'light'
-if [ $@ -lt 0 ]; then
-  light -U "${@#-}" > /dev/null
-else
-  light -A "${@#-}" > /dev/null
-fi
+brightnessctl set $@
 
 # Query light for the current brightness
-brightness="$(light -G)"
+maxBrightness="$(brightnessctl max)"
+currentBrightness="$(brightnessctl get)"
+percentBrightness=$(( 100 * currentBrightness / maxBrightness))
 dunstify -a "changeBrightness" -u low -i audio-volume-high -h string:x-dunst-stack-tag:$msgTag \
--h int:value:"$brightness" "Brightness: ${brightness}%"
+-h int:value:"$percentBrightness" "Brightness: ${percentBrightness}%"

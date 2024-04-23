@@ -66,15 +66,15 @@
   },
   "network": {
     "format-wifi": " {signalStrength}%  ",
-    "format-ethernet": "  wired ",
+    "format-ethernet": " 󰈀 wired ",
     "tooltip": true,
     "format-disconnected": " Disconnected ⚠ "
   },
   "pulseaudio": {
     "format": "{volume}% {icon} {format_source}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
+    "format-bluetooth-muted": "󰝟 {icon} {format_source}",
+    "format-muted": "󰝟 {format_source}",
     "format-source": "  {volume}% ",
     "format-source-muted": "",
     "format-icons": {

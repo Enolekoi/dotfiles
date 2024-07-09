@@ -1,6 +1,7 @@
 #!/bin/sh
 # ssh -aliases
 alias sshpi="ssh finn@192.168.0.17"
+alias sshdesktop="ssh -p 5522 finn@finnsev.ddns.net"
 # make doas work with zsh aliases
 alias doas='doas '
 
@@ -41,3 +42,4 @@ alias asciiquarium="asciiquarium -t"
 # alias for fast navigation
 alias conf="cd ~/.config"
 alias haw="cd ~/Dokumente/Hochschule/Master/2_Semester"
+alias master="cd ~/Dokumente/Hochschule/Master/3_Semester/Masterarbeit/"

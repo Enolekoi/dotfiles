@@ -11,7 +11,7 @@ export XCURSOR_SIZE=24
 export GDK_BACKEND=wayland
 
 # Theming
-export GTK_THEME=Catppuccin-Mocha-Standard-Yellow-Dark
+export GTK_THEME=catppuccin-mocha-yellow-standard+default
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 
 # launch hyprland

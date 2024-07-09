@@ -30,3 +30,6 @@ export IMAGE='sxiv'
 
 
 export PATH=$PATH:/home/finn/.spicetify
+
+export PATH="$HOME/.tmux/plugins/tmuxifier/bin:$PATH"
+eval "$(tmuxifier init -)"

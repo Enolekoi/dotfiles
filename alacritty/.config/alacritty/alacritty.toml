@@ -78,10 +78,10 @@ color = "#F5E0DC"
 blinking = "Never"
 
 [font]
-size = 16.0
+size = 18.0
 
 [font.bold]
-family = "FiraCode Nerd Font Mono"
+family = "Ubuntu Mono Nerd Font"
 style = "Bold"
 
 [font.glyph_offset]
@@ -89,11 +89,11 @@ x = 0
 y = 0
 
 [font.italic]
-family = "FiraCode Nerd Font Mono"
+family = "Ubuntu Mono Nerd Font"
 style = "Italic"
 
 [font.normal]
-family = "FiraCode Nerd Font Mono"
+family = "Ubuntu Mono Nerd Font"
 style = "Regular"
 
 [font.offset]
@@ -130,5 +130,5 @@ dynamic_title = true
 opacity = 1
 
 [window.padding]
-x = 40
-y = 40
+x = 60
+y = 60

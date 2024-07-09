@@ -10,6 +10,8 @@ vim.opt.wrap = true                   -- wrap lines
 -- vim.opt.foldmethod = "expr"
 -- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
+lvim.keys.normal_mode["K"] = ":BufferLineCycleNext<CR>"
+lvim.keys.normal_mode["H"] = ":BufferLineCyclePrev<CR>"
 -- Lvim specific settings
 lvim.transparent_window = true
 -- User Plugins
@@ -17,18 +19,44 @@ lvim.plugins = {
   { "catppuccin/nvim"},
   { "norcalli/nvim-colorizer.lua"},
   { "HiPhish/rainbow-delimiters.nvim"},
-}
-require('nvim-treesitter.configs').setup {
-  rainbow = {
-    enable = true,
-    -- list of languages you want to disable the plugin for
-    disable = {},
-    -- Which query to use for finding delimiters
-    query = 'rainbow-parens',
-    -- Highlight the entire buffer all at once
-    strategy = require('ts-rainbow').strategy.global,
-  }
+  { 'alexghergh/nvim-tmux-navigation', config = function()
+    local nvim_tmux_nav = require('nvim-tmux-navigation')
+    nvim_tmux_nav.setup {
+        disable_when_zoomed = true -- defaults to false
+    }
+
+    vim.keymap.set('n', "<C-h>", nvim_tmux_nav.NvimTmuxNavigateLeft)
+    vim.keymap.set('n', "<C-j>", nvim_tmux_nav.NvimTmuxNavigateDown)
+    vim.keymap.set('n', "<C-k>", nvim_tmux_nav.NvimTmuxNavigateUp)
+    vim.keymap.set('n', "<C-l>", nvim_tmux_nav.NvimTmuxNavigateRight)
+    vim.keymap.set('n', "<C-\\>", nvim_tmux_nav.NvimTmuxNavigateLastActive)
+    vim.keymap.set('n', "<C-Space>", nvim_tmux_nav.NvimTmuxNavigateNext)
+  
+  end
+  },
+  { "jose-elias-alvarez/null-ls.nvim",
+  dependencies = { "nvim-lua/plenary.nvim" },
+  config = function()
+    local null_ls = require("null-ls")
+
+    null_ls.setup({
+      sources = {
+        null_ls.builtins.diagnostics.ruff,
+        null_ls.builtins.formatting.black,
+      }
+    })
+  end
+  },
 }
 
-lvim.keys.normal_mode["K"] = ":BufferLineCycleNext<CR>"
-lvim.keys.normal_mode["H"] = ":BufferLineCyclePrev<CR>"
+require('nvim-treesitter.configs').setup {
+  rainbow = {
+  enable = true,
+  -- list of languages you want to disable the plugin for
+  disable = {},
+  -- Which query to use for finding delimiters
+  query = 'rainbow-parens',
+  -- Highlight the entire buffer all at once
+  -- strategy = require('ts-rainbow').strategy.global,
+  }
+}

@@ -1,0 +1,11 @@
+[Unit]
+Description=Local system suspend actions
+Before=sleep.target
+
+[Service]
+Type=simple
+ExecStartPre=-/usr/bin/sleep 2
+ExecStart=-/usr/bin/true
+
+[Install]
+WantedBy=sleep.target

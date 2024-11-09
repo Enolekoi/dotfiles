@@ -54,7 +54,8 @@
   },
 
   "clock": {
-    "format": "<b>{:%I:%M %p}</b>",
+    "timezone": "Europe/Berlin",
+    "format": "<b>{:L%H:%M %p}</b>",
     "format-alt": "<b>{:%a.%d,%b}</b>",
     "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
   },

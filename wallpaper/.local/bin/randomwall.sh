@@ -1,7 +1,7 @@
 #!/bin/sh
 
 directory=~/.local/share/wallpaper/current/
-monitor=`hyprctl monitors | grep Monitor | awk '{print $2}'`
+# monitor=`hyprctl monitors | grep Monitor | awk '{print $2}'`
 
 if [ -d "$directory" ]; then
     random_background=$(ls $directory/*.jpg | shuf -n 1)

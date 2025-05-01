@@ -34,19 +34,19 @@ lvim.plugins = {
   
   end
   },
-  { "jose-elias-alvarez/null-ls.nvim",
-  dependencies = { "nvim-lua/plenary.nvim" },
-  config = function()
-    local null_ls = require("null-ls")
+  -- { "jose-elias-alvarez/null-ls.nvim",
+  -- dependencies = { "nvim-lua/plenary.nvim" },
+  -- config = function()
+  --   local null_ls = require("null-ls")
 
-    null_ls.setup({
-      sources = {
-        null_ls.builtins.diagnostics.ruff,
-        null_ls.builtins.formatting.black,
-      }
-    })
-  end
-  },
+  --   null_ls.setup({
+  --     sources = {
+  --       null_ls.builtins.diagnostics.ruff,
+  --       null_ls.builtins.formatting.black,
+  --     }
+  --   })
+  -- end
+  -- },
 }
 
 require('nvim-treesitter.configs').setup {
@@ -60,3 +60,7 @@ require('nvim-treesitter.configs').setup {
   -- strategy = require('ts-rainbow').strategy.global,
   }
 }
+
+require('indent_blankline').setup({
+  use_treesitter = false,
+})

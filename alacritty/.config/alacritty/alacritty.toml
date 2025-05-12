@@ -127,7 +127,7 @@ mods = "Control"
 
 [window]
 dynamic_title = true
-opacity = 1
+opacity = 0.94
 
 [window.padding]
 x = 60

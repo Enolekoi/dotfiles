@@ -20,11 +20,11 @@ export JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab
 # eval "`pip completion --zsh`"
 
 # Default Apps
-export EDITOR='lvim'
+export EDITOR='nvim'
 export READER='zathura'
-export VISUAL='lvim'
+export VISUAL='nvim'
 export TERMINAL='alacritty'
-export BROWSER='firefox'
+export BROWSER='zen-browser'
 export VIDEO='mpv'
 export IMAGE='sxiv'
 

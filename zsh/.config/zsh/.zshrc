@@ -52,3 +52,9 @@ zsh_add_plugin "zdharma-continuum/fast-syntax-highlighting"
 # Key-bindings
 bindkey -s '^o' 'ranger^M'
 export PATH=$PATH:/home/finn/.spicetify
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"

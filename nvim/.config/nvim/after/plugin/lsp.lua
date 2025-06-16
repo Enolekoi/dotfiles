@@ -37,8 +37,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 -- LSP Servers
 require('lspconfig').clangd.setup({})		-- C
+require('lspconfig').bashls.setup({})		-- bash
 require('lspconfig').pyright.setup({})		-- Python
-require('lspconfig').lua_ls.setup({})		-- Python
+require('lspconfig').lua_ls.setup({})		-- Lua
 require('lspconfig').markdown_oxide.setup({})	-- Markdown
 require('lspconfig').texlab.setup({})		-- Latex
 

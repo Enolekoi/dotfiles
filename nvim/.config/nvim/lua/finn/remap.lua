@@ -1,8 +1,9 @@
+vim.g.mapleader = " "
 -- Remaps --
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex) -- keybind to open Netrw
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")  -- Move visual selection down
-vim.keymap.set("v", "K", ":m '<-1<CR>gv=gv")  -- Move visual selection up
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")  -- Move visual selection up
 
 vim.keymap.set("n", "J", "mzJ`z")             -- Cursor stays at the same place when using J to append the next line at the end of the current one
 vim.keymap.set("n", "<C-d>", "<C-d>zz")       -- Cursor stays at the center of the screen when using half page jumping

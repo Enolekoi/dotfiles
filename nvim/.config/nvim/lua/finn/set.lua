@@ -2,7 +2,16 @@
 -- vim.opt.clipboard:append('unnamedplus')  -- Linux/WSL
 
 -- Cursor
--- vim.opt.guicursor
+-- vim.opt.guicursor = false
+
+-- Netrw remove banner 
+vim.g.netrw_banner = 0
+-- Netrw Treestyle
+vim.g.netrw_liststyle = 1
+-- Netrw window size
+vim.g.netrw_winsize = 25
+-- Netrw hide files
+-- vim.g.netrw_list_hide = [[]]
 
 -- Line Numbers
 vim.opt.nu = true

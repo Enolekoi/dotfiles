@@ -34,4 +34,7 @@ return {
   {
     'nvim-treesitter/playground'
   },
+  {
+    'hiphish/rainbow-delimiters.nvim'
+  },
 }

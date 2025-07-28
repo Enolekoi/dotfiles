@@ -5,6 +5,7 @@ PACKAGES=(
   bash-language-server
   ccls
   lua-language-server
+  luarocks
   pyright
   texlab
 )

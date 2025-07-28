@@ -4,6 +4,6 @@ return {
   -- configuration function
   config = function()
     -- keybindings
-    vim.keymap.set('n', '<leader>gs', vim.cmd.Git)
+    vim.keymap.set('n', '<leader>gs', vim.cmd.Git, {desc = 'Open fugitive (Git)'})
   end
 }

@@ -18,6 +18,8 @@ export JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab
 # eval "$(fnm env)"
 # eval "$(zoxide init zsh)"
 # eval "`pip completion --zsh`"
+## Edit .zshrc and add this line
+export PATH=$HOME/.config/rofi/bin:$PATH
 
 # Default Apps
 export EDITOR='nvim'

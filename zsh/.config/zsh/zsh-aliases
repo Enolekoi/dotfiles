@@ -1,8 +1,8 @@
 #!/bin/sh
 # ssh -aliases
-alias sshpi="ssh finn@192.168.0.17"
+alias sshpi="ssh finn@192.168.2.92"
 # alias sshdesktop="ssh -p 5522 finn@finnsev.ddns.net"
-alias sshdesktop="ssh -p 5522 finn@192.168.0.64"
+alias sshdesktop="ssh -p 5522 finn@192.168.0.22"
 alias unlock_pacman="rm -rf /var/lib/pacman/db.lck"
 # make doas work with zsh aliases
 alias doas='doas '

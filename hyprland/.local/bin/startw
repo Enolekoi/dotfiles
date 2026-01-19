@@ -15,4 +15,4 @@ export GTK_THEME=catppuccin-mocha-yellow-standard+default
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 
 # launch hyprland
-exec Hyprland
+exec start-hyprland

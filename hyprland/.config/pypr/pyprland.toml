@@ -1,7 +1,13 @@
 [pyprland]
 plugins = [
+  "gamemode",
   "scratchpads",
+  "expose",
 ]
+
+[gamemode]
+auto = true
+notify = true
 
 [scratchpads.term]
 animation = "fromTop"
@@ -21,3 +27,5 @@ lazy = true
 command ="blueman-manager"
 class ="blueman-manager"
 size="40% 85%"
+
+[expose]

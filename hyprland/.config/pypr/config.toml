@@ -29,3 +29,4 @@ class ="blueman-manager"
 size="40% 85%"
 
 [expose]
+include_special = true

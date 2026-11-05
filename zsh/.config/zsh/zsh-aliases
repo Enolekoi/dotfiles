@@ -2,11 +2,12 @@
 # ssh -aliases
 alias sshpi="ssh finn@192.168.2.92"
 # alias sshdesktop="ssh -p 5522 finn@finnsev.ddns.net"
-alias sshdesktop="ssh -p 5522 finn@192.168.0.22"
+alias sshdesktop="ssh -p 5522 finn@192.168.2.45"
 alias unlock_pacman="rm -rf /var/lib/pacman/db.lck"
 # make doas work with zsh aliases
 alias doas='doas '
-
+# make cal alias with some standard flags set
+alias ca='ncal -b -w -3 -A 1 -M'
 
 # get fastest mirrors
 alias mirror="doas reflector -p "https" -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
